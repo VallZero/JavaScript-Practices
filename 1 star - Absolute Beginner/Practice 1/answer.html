@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Answer</title>
+    <style>
+        * {
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Try to activate the button!</h1>
+        <h3>When you press the button, all things on screen should dissapear</h3>
+        <button>Press here</button>
+    </main>
+</body>
+
+<script>
+    const button = document.querySelector('button');
+    button.addEventListener('click', function() {
+        button.parentElement.style.display = 'none';
+    })
+</script>
+
+</html>
